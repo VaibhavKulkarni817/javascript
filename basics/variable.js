@@ -14,4 +14,9 @@ accountCity = "Satara"
 
 console.log(accountId);
 
+/* 
+Prefer not to use var
+because of isuue in block scope and functional scope
+*/
+
 console.table([accountId,accountEmail,accountPassword,accountCity,accountState]);
