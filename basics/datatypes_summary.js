@@ -33,3 +33,30 @@ const myFunction = function(){
 }
 
 console.log(typeof heros );
+
+
+
+// ********************************************************************************************
+
+// Stack (Premitive) , Heap (Non-Primitive)
+
+
+let myName = "Vaibhav"
+
+let anothername = myName
+anothername = "Kaushal"
+
+console.log(anothername);
+console.log(myName);
+
+let userone = {
+    email: "user1234@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userone
+
+userTwo.email = "vaibhav@google.com"
+
+console.log(userone.email);
+console.log(userTwo.email);
