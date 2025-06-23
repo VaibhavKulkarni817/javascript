@@ -1,4 +1,4 @@
-const { useSyncExternalStore } = require("react")
+
 
 //const tinderUser = new Object()
 const tinderUser = {}
@@ -23,7 +23,7 @@ const regularUser = {
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "c", 4: "d"}
-const obj4 = {5: "e", 6: "f"}
+//const obj4 = {5: "e", 6: "f"}
 
 
 //const obj3 = { obj1, obj2 }
@@ -31,7 +31,7 @@ const obj4 = {5: "e", 6: "f"}
 //const obj3 = Object.assign({},obj1, obj2, obj4)
 
 const obj3 = {...obj1, ...obj2}
-console.log(obj3);
+//console.log(obj3);
 
 
 const users = [
@@ -54,9 +54,35 @@ const users = [
 
 ]
 
-users[1].email
-console.log(tinderUser);
+//  users[1].email
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.entries(tinderUser));
-console.log(Object.values(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.entries(tinderUser));
+// console.log(Object.values(tinderUser));
+
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+const course = {
+    coursename : "js in hindi",
+    prise: "999",
+    courseInstructor: "hitesh"
+}
+
+//course.courseInstructor
+
+const {CourseInstructor : instructor} = course
+
+console.log(instructor);
+
+// {
+//     "name" : "vaibhav",
+//     "coursename" : "JS in Hindi",
+//     "price" : "free"
+// }
+
+[
+    {},
+    {},
+    {},
+]
